@@ -2,10 +2,12 @@ package org.mvpigs.furnaceDIP.types;
 
 public class RoomTemperature {
 	
+	private static RoomTemperature instance = new RoomTemperature();
+
 	private double temperature = 0;
 	
-	public RoomTemperature(double temperature){
-		this.temperature = temperature;
+	private RoomTemperature(){
+		
 	}
 
 	public double getTemperature() {
@@ -18,6 +20,10 @@ public class RoomTemperature {
 	
 	public void incrementTemperature(double increment){
 		this.temperature += increment;
+	}
+
+	public static RoomTemperature getInstance() {
+		return instance;
 	}
 
 }
