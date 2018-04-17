@@ -31,9 +31,8 @@ public class App
         
         Jedi yoda = new Jedi();
         RoomTemperature temperature2 = RoomTemperature.getInstance();
-        temperature2.setTemperature(15);
         System.out.println( "\nArrancando a Yoda: " );
-        regulator.regulate(thermometer, yoda, minTemp, maxTemp, temperature);
+        regulator.regulate(thermometer, yoda, minTemp, maxTemp, temperature2);
         yoda.speak();
     }
 }
