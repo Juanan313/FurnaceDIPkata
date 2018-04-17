@@ -2,7 +2,7 @@ package org.mvpigs.furnaceDIP.types;
 
 public class RoomTemperature {
 	
-	private static RoomTemperature instance;
+	private static RoomTemperature instance = null;
 
 	private double temperature = 0;
 	
