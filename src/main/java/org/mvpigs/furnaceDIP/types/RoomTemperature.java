@@ -22,7 +22,7 @@ public class RoomTemperature {
 		this.temperature += increment;
 	}
 
-	public static RoomTemperature getInstance() {
+	public synchronized static RoomTemperature getInstance() {
 		if (instance == null) {
 			instance = new RoomTemperature();
 		}
